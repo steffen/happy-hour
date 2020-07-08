@@ -1,10 +1,10 @@
 on:
   workflow_dispatch:
     inputs:
-      logLevel:
+      customer:
         description: 'Customer'
         required: true
-      tags:
+      hours:
         description: 'Hours'
         required: true
 
