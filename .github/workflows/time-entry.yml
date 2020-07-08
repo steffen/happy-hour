@@ -1,0 +1,17 @@
+on:
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Customer'
+        required: true
+      tags:
+        description: 'Hours'
+        required: true
+
+jobs:
+  printInputs:
+    runs-on: ubuntu-latest
+    steps:
+    - run: |
+        echo "Customer: ${{ github.event.inputs.customer }}"
+        echo "Hour: ${{ github.event.inputs.hours }}"
