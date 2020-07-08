@@ -1,3 +1,5 @@
+name: Happy Hour
+
 on:
   workflow_dispatch:
     inputs:
